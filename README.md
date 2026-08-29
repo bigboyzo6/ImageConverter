@@ -1,32 +1,36 @@
-# React + TypeScript + Vite
+🖼️ ImageConverter - Universal Image Converter & AI Tools
+Web konversi gambar dan hapus background berbasis browser 100% client-side & privacy-first (React, TypeScript, Vite, Tailwind CSS/Styles, dan AI ONNX).
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+💻 Cara Menjalankan Project
+Prasyarat System:
+Node.js (versi 18 ke atas)
+VS Code
+Web Browser Modern (Chrome, Edge, Firefox)
 
-Currently, two official plugins are available:
+1. Clone Repository
+Buka Terminal / Command Prompt, lalu jalankan:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+git clone [https://github.com/bigboyzo6/ImageConverter.git](https://www.google.com/search?q=https://github.com/bigboyzo6/ImageConverter.git)
+cd ImageConverter
 
-## React Compiler
+2. Instal Dependency
+Jalankan perintah berikut di terminal untuk memasang semua modul yang dibutuhkan (termasuk modul AI & kompresi ZIP):
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+npm install
 
-## Expanding the Oxlint configuration
+3. Jalankan Server Dev (Vite)
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+* Buka Terminal di VS Code.
+* Jalankan server lokal:
+npm run dev
+* Akses aplikasi melalui tautan yang muncul di terminal (misal: http://localhost:5173).
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+✨ Fitur Utama
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+* Multi-Format Selection: Konversi gambar secara cepat antar format WEBP, JPG/JPEG, dan PNG.
+* AI Background Removal: Menghapus latar belakang gambar secara otomatis 100% di browser pengguna tanpa mengirim data ke server luar.
+* Batch Download (.ZIP): Mengunduh seluruh hasil konversi gambar sekaligus dalam satu file ZIP.
+* Privacy First: Seluruh proses konversi dan kompresi dilakukan secara lokal pada perangkat pengguna.
+
+👤 Author
+GitHub: @bigboyzo6
